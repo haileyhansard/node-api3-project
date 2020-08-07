@@ -37,7 +37,7 @@ router.get('/', (req, res) => {
       console.log(err)
       res.status(500).json({ error: "Users info could not be retrieved" })
     })
-});
+}); 
 
 
 router.get('/:id', validateUserId, (req, res) => {
